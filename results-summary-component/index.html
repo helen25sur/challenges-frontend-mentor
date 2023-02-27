@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Results summary component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,53 +12,64 @@
   <link rel="stylesheet" href="assets/styles/vars.css">
   <link rel="stylesheet" href="assets/styles/style.css">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
   </style>
 </head>
+
 <body>
-<main>
-  <section class="results">
-    <h2 class="section-title results-title">Your Result</h2>
-    <div class="score">
-      <span class="user-score">76</span>
-      <span class="amount-score">of 100</span>
-    </div>
-    <div class="congatulations">
-      <h3 class="congatulations-title">Great</h3>
-      <p class="congatulations-text">You scored higher than 65% of the people who have taken these tests.</p>
-    </div>
-  </section>
+  <main>
+    <div class="container">
+      <section class="results">
+        <h2 class="section-title results-title">Your Result</h2>
+        <div class="score">
+          <span class="user-score"><strong>76</strong></span>
+          <span class="amount-score">of 100</span>
+        </div>
+        <div class="congatulations">
+          <h3 class="congatulations-title">Great</h3>
+          <p class="congatulations-text">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </section>
 
-  <section class="summary">
-    <h2 class="section-title summary-title">Summary</h2>
-    <ul class="summary-list">
-      <li class="summary-item">
-        <span class="item-title">Reaction</span>
-        <span class="item-score">80 </span>/ 100
-      </li>
-      <li class="summary-item">
-        <span class="item-title">Memory</span>
-        <span class="item-score"> 92 </span>/ 100
-      </li>
-      <li class="summary-item">
-        <span class="item-title">Verbal</span>
-        <span class="item-score">61 </span>/ 100
-      </li>
-      <li class="summary-item">
-        <span class="item-title">Visual</span>
-        <span class="item-score">72 </span>/ 100
-      </li>
-    </ul>
-    <button id="continue">Continue</button>
-  </section>
-</main>
+      <section class="summary">
+        <h2 class="section-title summary-title">Summary</h2>
+        <ul class="summary-list">
+          <li class="summary-item">
+            <span class="item-title">Reaction</span>
+            <span class="item-score"><strong>80</strong> / 100</span>
+          </li>
+          <li class="summary-item">
+            <span class="item-title">Memory</span>
+            <span class="item-score"> <strong>92</strong> / 100</span>
+          </li>
+          <li class="summary-item">
+            <span class="item-title">Verbal</span>
+            <span class="item-score"><strong>61</strong> / 100</span>
+          </li>
+          <li class="summary-item">
+            <span class="item-title">Visual</span>
+            <span class="item-score"><strong>72</strong> / 100</span>
+          </li>
+        </ul>
+        <button id="continue">Continue</button>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/helen25sur">Olena Surilova</a>.
+    </div>
+  </footer>
 
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/helen25sur">Olena Surilova</a>.
-  </div>
 </body>
+
 </html>

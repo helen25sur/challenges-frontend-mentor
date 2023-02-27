@@ -2,13 +2,49 @@
   /* ========= Layout ========== */
   --max-width: 1440px;
   --min-width: 375px;
+  --max-w-card: 736px;
+  --min-h-card: 53vh;
+  --height-footer: 40px;
+  --score-size: 200px;
+  --gap-md: 26px;
 
   /* ========= Colors ========== */
   /* Primary */
-  --light-red: hsl(0, 100%, 67%);
-  --orangey-yellow: hsl(39, 100%, 56%);
-  --green-teal: hsl(166, 100%, 37%);
-  --cobalt-blue: hsl(234, 85%, 45%);
+  /* red */
+  --light-red-h: 0;
+  --light-red-s: 100%;
+  --light-red-l: 67%;
+  --light-red:
+    hsl(var(--light-red-h),
+      var(--light-red-s),
+      var(--light-red-l));
+
+  /* orange */
+  --orangey-yellow-h: 39;
+  --orangey-yellow-s: 100%;
+  --orangey-yellow-l: 56%;
+  --orangey-yellow:
+    hsl(var(--orangey-yellow-h),
+      var(--orangey-yellow-s),
+      var(--orangey-yellow-l));
+
+  /* green */
+  --green-teal-h: 166;
+  --green-teal-s: 100%;
+  --green-teal-l: 37%;
+  --green-teal:
+    hsl(var(--green-teal-h),
+      var(--green-teal-s),
+      var(--green-teal-l));
+
+  /* blue */
+  --cobalt-blue-h: 234;
+  --cobalt-blue-s: 85%;
+  --cobalt-blue-l: 45%;
+  --cobalt-blue:
+    hsl(var(--cobalt-blue-h),
+      var(--cobalt-blue-s),
+      var(--cobalt-blue-l));
 
   /* Gradients */
   --light-slate-blue-bg: hsl(252, 100%, 67%);
@@ -19,6 +55,12 @@
   /* Neutral */
   --white-clr: hsl(0, 0%, 100%);
   --pale-blue-clr: hsl(221, 100%, 96%);
+  --pale-blue-clr-transp: hsla(221, 100%, 96%, 70%);
   --light-lavender-clr: hsl(241, 100%, 89%);
   --dark-gray-blue-clr: hsl(224, 30%, 27%);
+
+  /* ================ Another properties ============= */
+  --fs-default: 18px;
+  --fs-bigger: calc(var(--fs-default) * 1.35);
+  --brd-radius: calc(var(--fs-default) * 2);
 }
