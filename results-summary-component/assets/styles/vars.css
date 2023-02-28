@@ -50,7 +50,9 @@
   --light-slate-blue-bg: hsl(252, 100%, 67%);
   --light-royal-blue-bg: hsl(241, 81%, 54%);
   --violet-blue-circle: hsla(256, 72%, 46%, 1);
-  --persian-blue-circle: hsla(241, 72%, 46%, 0);
+  --persian-blue-circle: hsla(241, 72%, 46%, 0.1);
+  --violet-blue-clr: hsl(256, 72%, 46%);
+  --persian-blue-clr: hsl(241, 72%, 46%);
 
   /* Neutral */
   --white-clr: hsl(0, 0%, 100%);

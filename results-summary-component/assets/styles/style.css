@@ -199,12 +199,3 @@ main section {
 .summary-item:nth-of-type(4) .item-title::before {
   background-image: url('../images/icon-visual.svg');
 }
-
-#continue {
-  width: 100%;
-  background-color: var(--dark-gray-blue-clr);
-  color: var(--white-clr);
-  margin-top: 23px;
-  padding: 18px;
-  border-radius: 30px;
-}
