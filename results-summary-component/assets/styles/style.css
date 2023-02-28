@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: var(--fs-default);
+  font-weight: 500;
+  background-color: var(--white-clr);
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+main {
+  height: calc(100vh - var(--height-footer));
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: var(--max-w-card);
+  min-height: var(--min-h-card);
+  margin: 0 auto;
+  background-color: var(--white-clr);
+  box-shadow: 20px 16px 32px var(--pale-blue-clr);
+  border-radius: var(--brd-radius);
+}
+
+main section {
+  width: 50%;
+  padding: 37px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.results {
+  background-image:
+    linear-gradient(var(--light-slate-blue-bg),
+      var(--light-royal-blue-bg));
+  color: var(--pale-blue-clr-transp);
+  align-items: center;
+  text-align: center;
+  border-radius: var(--brd-radius);
+}
+
+.section-title {
+  font-size: var(--fs-bigger);
+  margin-bottom: 35px;
+  letter-spacing: -0.25px;
+}
+
+.score {
+  width: var(--score-size);
+  height: var(--score-size);
+  margin-bottom: var(--gap-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-image:
+    linear-gradient(var(--violet-blue-circle),
+      var(--persian-blue-circle));
+}
+
+.user-score {
+  font-size: calc(var(--fs-default) * 4);
+  font-weight: 800;
+  color: var(--white-clr);
+}
+
+.congatulations {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.congatulations-title {
+  margin-bottom: 18px;
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--white-clr);
+}
+
+.summary {
+  border-radius: var(--brd-radius);
+  color: var(--dark-gray-blue-clr);
+  background-color: var(--white-clr);
+}
+
+.summary-title {
+  margin-bottom: 29px;
+}
+
+.summary-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+}
+
+.summary-item {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  padding-left: 48px;
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.item-title::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  width: 21px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.summary-item:first-of-type {
+  background-color: hsla(var(--light-red-h),
+      var(--light-red-s),
+      var(--light-red-l), 0.1);
+}
+
+.summary-item:first-of-type .item-title {
+  color: hsla(var(--light-red-h),
+      var(--light-red-s),
+      var(--light-red-l), 0.9);
+}
+
+.summary-item:first-of-type .item-title::before {
+  background-image: url('../images/icon-reaction.svg');
+}
+
+.summary-item:nth-of-type(2) {
+  background-color: hsla(var(--orangey-yellow-h),
+      var(--orangey-yellow-s),
+      var(--orangey-yellow-l), 0.1);
+}
+
+.summary-item:nth-of-type(2) .item-title {
+  color: hsla(var(--orangey-yellow-h),
+      var(--orangey-yellow-s),
+      var(--orangey-yellow-l), 0.9);
+}
+
+.summary-item:nth-of-type(2) .item-title::before {
+  background-image: url('../images/icon-memory.svg');
+}
+
+.summary-item:nth-of-type(3) {
+  background-color: hsl(var(--green-teal-h),
+      var(--green-teal-s),
+      var(--green-teal-l), 0.1);
+}
+
+.summary-item:nth-of-type(3) .item-title {
+  color: hsl(var(--green-teal-h),
+      var(--green-teal-s),
+      var(--green-teal-l), 0.9);
+}
+
+.summary-item:nth-of-type(3) .item-title::before {
+  background-image: url('../images/icon-verbal.svg');
+}
+
+.summary-item:nth-of-type(4) {
+  background-color: hsl(var(--cobalt-blue-h),
+      var(--cobalt-blue-s),
+      var(--cobalt-blue-l), 0.1);
+}
+
+.summary-item:nth-of-type(4) .item-title {
+  color: hsl(var(--cobalt-blue-h),
+      var(--cobalt-blue-s),
+      var(--cobalt-blue-l), 0.9);
+}
+
+.summary-item:nth-of-type(4) .item-title::before {
+  background-image: url('../images/icon-visual.svg');
+}
+
+footer {
+  height: var(--height-footer);
+  padding: 2em 1em;
+}

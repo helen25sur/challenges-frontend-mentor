@@ -1,0 +1,115 @@
+/* Base */
+
+#continue {
+  position: relative;
+  width: 100%;
+  background-color: var(--dark-gray-blue-clr);
+  color: var(--white-clr);
+  margin-top: 23px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button__content {
+  position: relative;
+  padding: 18px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+
+}
+
+.button__text {
+  position: relative;
+  z-index: 10;
+}
+
+/* Button shapes */
+
+.button__content div {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  filter: blur(16px);
+}
+
+.button__shape-1 {
+  background-color: var(--light-slate-blue-bg);
+  transform: translate(-112px, -14px);
+  animation: shape-1 6s 1s ease-out infinite;
+}
+
+.button__shape-2 {
+  background-color: var(--light-royal-blue-bg);
+  transform: translate(-35px, 4px);
+  animation: shape-2 6s 1s ease-in infinite;
+}
+
+.button__shape-3 {
+  background-color: var(--violet-blue-clr);
+  transform: translate(35px, -14px);
+  animation: shape-3 6s ease-out infinite;
+}
+
+.button__shape-4 {
+  background-color: var(--persian-blue-clr);
+  transform: translate(112px, 16px);
+  animation: shape-4 6s ease-in infinite;
+}
+
+/* Button shadow */
+.button::after {
+  content: '';
+  width: 80%;
+  height: 0.6rem;
+  background: linear-gradient(80deg,
+      var(--light-slate-blue-bg) 10%,
+      var(--light-royal-blue-bg) 30%,
+      var(--violet-blue-clr) 60%,
+      var(--persian-blue-clr) 90%);
+  border-radius: 4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -2px;
+  filter: blur(12px);
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.button:hover:after {
+  opacity: 1;
+}
+
+/* Button Animation */
+
+@keyframes shape-1 {
+  33% {
+    transform: translate(-90px, 0);
+  }
+}
+
+@keyframes shape-2 {
+  33% {
+    transform: translate(-16px, 36px);
+  }
+}
+
+@keyframes shape-3 {
+  33% {
+    transform: translate(16px, 24px);
+  }
+}
+
+@keyframes shape-4 {
+  33% {
+    transform: translate(90px, 0);
+  }
+}

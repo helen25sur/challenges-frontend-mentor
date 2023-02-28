@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/vars.css">
+  <link rel="stylesheet" href="assets/styles/button.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/smaller-screen.css" media="screen and (max-width: 650px)">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+  </style>
+
+  <script src="assets/scripts/index.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <section class="results">
+        <h2 class="section-title results-title">Your Result</h2>
+        <div class="score">
+          <span class="user-score"><strong></strong></span>
+          <span class="amount-score">of 100</span>
+        </div>
+        <div class="congatulations">
+          <h3 class="congatulations-title">Great</h3>
+          <p class="congatulations-text">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </section>
+
+      <section class="summary">
+        <h2 class="section-title summary-title">Summary</h2>
+        <ul class="summary-list">
+          <li class="summary-item">
+            <span class="item-title"></span>
+            <span class="item-score"><strong></strong> / 100</span>
+          </li>
+          <li class="summary-item">
+            <span class="item-title"></span>
+            <span class="item-score"> <strong></strong> / 100</span>
+          </li>
+          <li class="summary-item">
+            <span class="item-title"></span>
+            <span class="item-score"><strong></strong> / 100</span>
+          </li>
+          <li class="summary-item">
+            <span class="item-title"></span>
+            <span class="item-score"><strong></strong> / 100</span>
+          </li>
+        </ul>
+        <a href="#" id="continue" class="button" role="button" tabindex="0">
+          <div class="button__content">
+            <span class="button__text">
+              Continue
+            </span>
+
+            <div class="button__shape-1"></div>
+            <div class="button__shape-2"></div>
+            <div class="button__shape-3"></div>
+            <div class="button__shape-4"></div>
+          </div>
+        </a>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/helen25sur">Olena Surilova</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>
