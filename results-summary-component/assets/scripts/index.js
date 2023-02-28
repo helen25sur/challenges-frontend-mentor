@@ -2,7 +2,7 @@ const userScore = document.body.querySelector('.user-score>strong');
 
 const summaryItemsList = document.body.querySelectorAll('.summary-item');
 
-fetch('../../data.json')
+fetch('/assets/data/data.json')
   .then((response) => response.json())
   .then((data) => {
     let score = 0;

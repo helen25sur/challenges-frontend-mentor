@@ -12,6 +12,7 @@ body {
   font-weight: 500;
   background-color: var(--white-clr);
   height: 100vh;
+  margin: 0 auto;
 }
 
 ul {
@@ -26,7 +27,7 @@ button {
 }
 
 main {
-  height: calc(100vh - var(--height-footer));
+  height: calc(100vh - var(--height-footer) - 4em);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
