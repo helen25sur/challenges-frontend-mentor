@@ -5,6 +5,8 @@
 }
 
 body {
+  max-width: var(--max-width);
+  min-width: var(--min-width);
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: var(--fs-default);
   font-weight: 500;
@@ -198,4 +200,9 @@ main section {
 
 .summary-item:nth-of-type(4) .item-title::before {
   background-image: url('../images/icon-visual.svg');
+}
+
+footer {
+  height: var(--height-footer);
+  padding: 2em 1em;
 }
